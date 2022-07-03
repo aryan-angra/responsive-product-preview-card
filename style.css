@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    margin: 7% 30%;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 40%;
+}
+
+.product-img .item-mobile-img {
+    display: none;
+}
+
+.product-img img {
+    margin-bottom: -4px;
+}
+
+.product-details {
+    width: 60%;
+    padding: 1% 4%;
+}
+
+.product-details .sub-heading {
+    font-size: 42px;
+    font-family: 'Fraunces', serif;
+}
+
+.product-details .heading {
+    font-family: Montserrat, serif;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.product-details .description {
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    color: hsl(228, 12%, 48%);
+    line-height: 26px;
+    margin: 4% 0;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 42px;
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+}
+
+.previous-price {
+    font-family: Montserrat, serif;
+    margin-left: 9%;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.add-cart {
+    display: block;
+    background-color: #3c8067;
+    text-align: center;
+    padding: 5%;
+    border-radius: 12px;
+    margin: 4% 0;
+    font-family: 'Montserrat', serif;
+    color: white;
+    text-decoration: none;
+}
+
+.attribution {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 27px;
+}
+/* media query for mobile layout - 375px */
+@media only screen and (max-width: 377px) {
+    .product-card {
+        margin: 7% 6%;
+        flex-direction: column;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .product-img .item-mobile-img {
+        display: block;
+        width: 331px;
+    }
+
+    .product-img .item-desktop-img {
+        display: none;
+    }
+
+    .product-details {
+        width: 100%;
+        padding: 6%;
+    }
+
+    .product-details .sub-heading {
+        font-size: 31px;
+    }
+
+    .current-price {
+        font-size: 30px;
+    }
+
+    .product-details .description {
+        font-size: 13px;
+        margin-bottom: 12%;
+    }
+}
